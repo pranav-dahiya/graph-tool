@@ -7,4 +7,6 @@ Packages installed:
 * base-devel
 * pip
 * jupyterlab
-* apache-spark
+* pyspark
+* multiprocess
+* dill
