@@ -10,3 +10,5 @@ Packages installed:
 * pyspark
 * multiprocess
 * dill
+
+NOTE: mirrorlist includes arch mirrors geographically closer to me. apache-spark/ is the same as the aur package but with a closer mirror to me and updated for v3.0.1
