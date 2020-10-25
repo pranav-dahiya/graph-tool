@@ -6,7 +6,7 @@ COPY apache-spark /home/user/apache-spark
 RUN cd /home/user/ && chown user -R apache-spark && cd apache-spark && sudo -u user makepkg -s && pacman -U --noconfirm *.pkg.tar.*
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN mkdir /home/user/work && chown user -R /home/user/work
 USER user
 WORKDIR /home/user/work
+RUN chown user -R /home/user/work
 CMD jupyter lab --ip 0.0.0.0
