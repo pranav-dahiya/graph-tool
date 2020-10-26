@@ -1,6 +1,7 @@
 FROM tiagopeixoto/graph-tool:latest
 COPY mirrorlist /etc/pacman.d/mirrorlist
 RUN pacman -Syu --noconfirm jupyterlab base-devel jdk8-openjdk python-pip
+RUN pacman -S --noconfirm
 COPY apache-spark /home/user/apache-spark
 RUN cd /home/user/ && chown user -R apache-spark && cd apache-spark && sudo -u user makepkg -s && pacman -U --noconfirm *.pkg.tar.*
 COPY requirements.txt requirements.txt
