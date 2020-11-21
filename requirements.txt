@@ -2,5 +2,5 @@ pyspark
 multiprocess
 newspaper3k
 sqlalchemy
-mysqlconnector-python
+mysql-connector-python
 gensim
