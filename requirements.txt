@@ -3,4 +3,5 @@ multiprocess
 newspaper3k
 sqlalchemy
 mysql-connector-python
+cython
 gensim
